@@ -1,0 +1,272 @@
+body{
+  margin:0px 0px 0px 0px;
+  color: #333333;
+  width: 100%;
+  font-family: Georgia, serif;
+  background-color: #F3F3F3;
+}
+
+#intro{
+    background: url(../images/man_cellphone.jpg) no-repeat bottom center scroll;
+    background-color: #333333;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#intro h1 {
+    color: #FF606E;
+    text-align: center;
+    font-size: 48px;
+    font-family: actor ,sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 27% 0 0 0 ;
+    margin-bottom: -15px;
+
+}
+
+#intro h2{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    color: #00DDD8;
+    text-align: center;
+    font-size: 20px;
+    font-family: actor,sans-serif;
+    text-transform: uppercase;
+
+}
+
+#intro a:link, a:visited{
+    color:rgba(255,255,255,.72);;
+}
+
+#intro a:hover{
+    color:rgba(255,255,255,1);
+
+}
+
+.glyphicon-chevron-down {
+    width: 100px;
+    height: 100px;
+    font-size: 70px;
+    margin: 15px 0px 0px 0px;
+    background: 0 0;
+
+}
+
+h3 {
+    color: #333333;
+  text-align: center;
+    font-family: actor ,sans-serif;
+    margin-top: 0;
+}
+
+table, th, td{
+    border: 1px solid white;
+    margin-left:auto;
+  margin-right:auto;
+
+}
+
+th{
+    font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 5px 0px 5px 5px;
+    margin: -30px -30px 10px -30px;
+    color: #FFF;
+    background: #9DC45F;
+    text-shadow: 1px 1px 1px #949494;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-bottom:1px solid #89AF4C;
+}
+
+td{
+    background-color: #F8FFE3;
+    color: #353634;
+}
+
+a:link {
+    text-decoration:none;
+    color: #4e4e4e;
+}
+a:visited {
+    text-decoration:none;
+    color: #888888;
+}
+a:hover {
+    text-decoration:none;
+    color: #d0e1ea;
+}
+
+nav.custom {
+    font-size: 12 px;
+    font-family: Helvetica, sans-serif;
+    height: 16 px;
+    text-align: center;
+    width: 100%;
+    margin:0px 0px 0px 0px;
+
+}
+nav.custom ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 30%;
+}
+
+nav.custom li{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+}
+
+nav.custom a:link, a:visited {
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 4px 10px 4px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+nav.custom  a:hover {
+}
+
+nav.custom a:active {
+}
+
+img.centered {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+img.contentImg {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#container{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+#content {
+    width: 75%;
+    height: 100%;
+    float: left;
+    margin-top: 10px;
+    border-right: solid 1px #42413C;
+
+}
+
+#sidebar {
+    width: 20%;
+    height: 100%;
+    float: right;
+    font-size: 11px;
+    font-family: Georgia, serif;
+    padding: 10px;
+}
+
+
+/*######## Smart Green ########*/
+.smart-green {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F8F8F8;
+    padding: 30px 30px 20px 30px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.smart-green h1 {
+    font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 10px 0px 10px 20px;
+    display: block;
+    margin: -30px -30px 10px -30px;
+    color: #FFF;
+    background: #9DC45F;
+    text-shadow: 1px 1px 1px #949494;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-bottom:1px solid #89AF4C;
+
+}
+.smart-green h1>span {
+    display: block;
+    font-size: 11px;
+    color: #FFF;
+}
+
+.smart-green label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.smart-green label>span {
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+.smart-green input[type="text"], .smart-green input[type="email"], .smart-green textarea, .smart-green select {
+    color: #555;
+    height: 30px;
+    line-height:15px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font: normal 14px/14px Arial, Helvetica, sans-serif;
+}
+.smart-green textarea{
+    height:100px;
+    padding-top: 10px;
+}
+.smart-green select {
+    background: url('down-arrow.png') no-repeat right, -moz-linear-gradient(top, #FBFBFB 0%, #E9E9E9 100%);
+    background: url('down-arrow.png') no-repeat right, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#E9E9E9));
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width:100%;
+    height:30px;
+}
+.smart-green .button {
+    background-color: #9DC45F;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-border-radius: 2px;
+    border: none;
+    padding: 5x 5px 5px 5px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
+}
+.smart-green .button:hover {
+    background-color:#80A24A;
+}
