@@ -6,15 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Audrey Grace Choi</title>
+
+    <!-- Referenced Sheets -->
     <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=actor">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+
+    <!-- Scripts -->
+
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $("#submit").click(function() {
+              
+              $.ajax({
+                  url: 'contact.php',
+                  data: {name: $( "#name" ).val(), email: $("#email").val(), message: $("#message").val()},
+                  success: function(data){
+                      $('#results').html(data);   
+                  }
+              });
+          });
+      });
+    </script>
 
 
 </head>
 <body>
-<header class="top" role="header">
+<header>
 
 <div class="container">
 <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -25,9 +48,9 @@
     <ul class="navbar-nav nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="#theSite">The Site</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="aboutsite.html">The Site</a></li>
-        <li><a href="datatracker.php">DataTrack</a></li>
+        <li><a href="datatracker.php">DataTracker</a></li>
+        <li><a href="#aboutMe">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li><a href="http://agc3szguestbook.appspot.com/?guestbook_name=default_guestbook">Guestbook</a></li>
     </ul>
 </nav>
@@ -45,15 +68,12 @@
 </div>
 
 <!--The Site-->
- <section id="theSite">
-<div id="container">
-    <div id="content">
-            <h3> DataTracker </h3>
+<section id="theSite">
+    <div class="content">
+            <h3> About DataTracker </h3>
             <article>
                 <h4> About the DataTracker</h4>
                 Every month I run into the same problem - I'm almost out of data on my cellphone.  The DataTracker will keep track of how much data I use within the month on my cellphone, and hopefully, preventing me from going over on my data.  It will be able to see how much data I've used so far, how much I have left in the month, along with what applications are using the most data.
-            </article>
-            <article>
                 <h4> What the App Will Do</h4>
                 <ul>
                     <li> Allow you to input how much data you have used during the day</li>
@@ -64,6 +84,58 @@
             </article>
     </div>
 </section>
+
+<section id="getStarted">
+    <div class="content">
+            <h3> Start Tracking Your Data</h3>
+            <span class="glyphicon glyphicon-pencil" ></span>
+            <br />
+            <br />
+            <a href="datatracker.php" class="btn-pink" role="button">Get Started</a>    
+    </div>
+</section>
+
+<section id="aboutMe">
+    <div class="content">
+        <h3> About Me </h3>
+        <div id="subAboutMe">
+            <img src="images/audrey_face.jpg" alt="Audrey Choi" class="aboutPhoto img-circle">
+            <p>
+                <span class="bold"> Name: </span> Audrey Grace (named after Audrey Hepburn and Grace Kelly) <br />
+                <span class="bold"> Age: </span> 21 years young<br />
+                <span class="bold"> Location: </span> Northern Virginia/Charlottesvile. Virginia<br />
+                <span class="bold"> Position: </span> Student at the Univeristy of Virginia majoring in Computer Science<br />
+                <span class="bold"> Sign: </span> Leo<br />
+                <span class="bold"> Favorite Food: </span> Turon (It's like a Fried Banana Eggroll) or Apple Turnovers<br />
+                <span class="bold"> Random Facts About Me: </span> I've moved 10 times in my life, I have a younger brother, I'm half-Korean, quarter-Chinese, eighth-Fillipino, eighth-Spanish
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="content">
+            <h3> Contact Me </h3>
+        <div class="contactForm">
+            <label for="name">Name</label>
+            <input name ="name" id ="name" type="text" class="form-control" required/>
+            <br />
+            <label for="email">Email</label>
+            <input name="email" id="email" type="text" class="form-control" required/>
+            <br />
+            <label for="message">Message</label>
+            <textarea name="message" id="message" class="form-control" required> </textarea>
+            <br />
+            <div id = "contactButton">
+            <button type="button" class="btn" id="submit">Submit</button>
+            </div>
+            <div id="results"></div>
+
+        </div>
+    </div>
+</section>
+
+
     <!--
     <div id="sidebar">
         <aside>
@@ -79,6 +151,5 @@
 
     </div>
 -->
-</div> 
 </body>
 </html>
