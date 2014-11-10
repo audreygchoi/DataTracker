@@ -19,10 +19,10 @@
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
     <script>
         $(document).ready(function() {
-          $("#submit").click(function() {
-              
+          $("#send").click(function() {
               $.ajax({
                   url: 'contact.php',
                   data: {name: $( "#name" ).val(), email: $("#email").val(), message: $("#message").val()},
@@ -34,6 +34,31 @@
       });
     </script>
 
+    <script>
+    $(document).ready(function () {
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash,
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            });
+        });
+
+    });
+    </script>
+    <script>
+    $(window).scroll(function() {
+        if ($(".navbar").offset().top > 20) {
+            $(".custom").addClass("custom-light");
+            $(this).after('<div id="details">Loading</div>');
+        } else {
+            $(".custom").removeClass("custom-light");
+        }
+    });
+    </script>
 
 </head>
 <body>
@@ -44,14 +69,13 @@
 <span class="glyphicon glyphicon-align-justify"></span>
 </button>
 
-<nav class = "custom navbar navbar-collapse collapse navbar-fixed-top" role="navigation">
+<nav class = "custom navbar navbar-collapse collapse navbar-fixed-top" role="navigation" id="top-nav">
     <ul class="navbar-nav nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="#theSite">The Site</a></li>
         <li><a href="datatracker.php">DataTracker</a></li>
         <li><a href="#aboutMe">About Me</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="http://agc3szguestbook.appspot.com/?guestbook_name=default_guestbook">Guestbook</a></li>
     </ul>
 </nav>
 </div>
@@ -86,12 +110,12 @@
 </section>
 
 <section id="getStarted">
-    <div class="content">
+    <div class="content-grey content">
             <h3> Start Tracking Your Data</h3>
             <span class="glyphicon glyphicon-pencil" ></span>
             <br />
             <br />
-            <a href="datatracker.php" class="btn-pink" role="button">Get Started</a>    
+            <a href="datatracker.php" class="btn" role="button">Get Started</a>    
     </div>
 </section>
 
@@ -114,7 +138,7 @@
 </section>
 
 <section id="contact">
-    <div class="content">
+    <div class="content-grey content">
             <h3> Contact Me </h3>
         <div class="contactForm">
             <label for="name">Name</label>
@@ -127,7 +151,7 @@
             <textarea name="message" id="message" class="form-control" required> </textarea>
             <br />
             <div id = "contactButton">
-            <button type="button" class="btn" id="submit">Submit</button>
+            <button type="button" class="btn" id="send">Send</button>
             </div>
             <div id="results"></div>
 
@@ -136,20 +160,5 @@
 </section>
 
 
-    <!--
-    <div id="sidebar">
-        <aside>
-            <a href = "#"><img src="images/profile_photo.jpg" alt="Audrey Choi" class ="centered"></a>
-            <br />
-            <h3> Audrey Grace Choi</h3>
-            <p> Attending University of Virginia, Majoring in CS, Loves Food and Travel
-            </p>
-            <h3> Contact </h3>
-            <p> agc3sz@virginia.edu </p>
-
-        </aside>
-
-    </div>
--->
 </body>
 </html>
