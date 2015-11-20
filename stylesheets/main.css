@@ -2,10 +2,12 @@
 ============BODY TAGS===========
 ============================= */
 
-body{
-  margin:0px 0px 0px 0px;
+html, body{
+  margin:0;
+  padding:0;
   color: #777777;
   width: 100%;
+  height:100%;
   font-family: Open Sans,sans-serif;
   background-color: #F3F3F3;
 }
@@ -72,8 +74,6 @@ img.aboutPhoto{
 /* =============================
 ============CLASSES=============
 ===============================*/
-.container{
-}
 
 .content{
     width: 85%;
@@ -99,7 +99,7 @@ img.aboutPhoto{
 .content-grey{
     background-color: #EEEEEE;
     width: 100%
-}
+    }
 
 /* =============================
 =============ICONS==============
@@ -146,126 +146,6 @@ img.aboutPhoto{
 /* =============================
 ==========BODY COMPONENTS=======
 ============================= */
-
-/*Intro Section Home Page*/
-#intro{
-    background: url(../images/desk.jpg) no-repeat bottom center scroll;
-    background-color: #333333;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-}
-
-#intro h1 {
-    color: #FF606E;
-    text-align: center;
-    font-size: 76px;
-    font-family: Raleway ,sans-serif;
-    font-weight: 800;
-    padding: 27% 0 0 0 ;
-    margin-bottom: -15px;
-    letter-spacing: 0px;
-
-}
-
-#intro h2{
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    color: #00DDD8;
-    text-align: center;
-    font-size: 20px;
-    font-family: Raleway,sans-serif;
-
-}
-
-#intro a:link, a:visited{
-    color:rgba(255,255,255,.72);;
-}
-
-#intro a:hover{
-    color:rgba(255,255,255,1);
-}
-
-
-/*Intro Section DataTracker*/
-#introDT{
-    background: url(../images/desk.jpg) no-repeat top center scroll;
-    background-color: #333333;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 50px 0;
-    text-align: center;
-    color: #fff;
-}
-
-#introDT h1 {
-    color: #FF606E;
-    text-align: center;
-    font-size: 52px;
-    font-family: Montserrat ,sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 5% 0 0 0 ;
-    margin-bottom: -15px;
-    letter-spacing: 3px;
-
-
-}
-
-#introDT h2{
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    color: #00DDD8;
-    text-align: center;
-    font-size: 20px;
-    font-family: Montserrat,sans-serif;
-    text-transform: uppercase;
-
-}
-
-#introDT a:link, a:visited{
-    color:rgba(255,255,255,.72);;
-}
-
-#introDT a:hover{
-    color:rgba(255,255,255,1);
-}
-/* The Site */
-#theSite{
-    background-color: #FFFFFF;
-}
-
-/* Get Started */
-#getStarted{
-    background-color: #EEEEEE;
-    text-align: center;
-}
-
-/* About Me */
-
-#subAboutMe{
-    background-color: #EEEEEE;
-    width: 100  %;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px 0px 30px 0px;
-    padding: 20px;
-}
-
-
-
 /* Navigation*/
 nav.custom {
     font-size: 12 px;
@@ -319,7 +199,7 @@ nav.custom-light {
     text-align: center;
     width: 100%;
     margin:0px 0px 0px 0px;
-    background-color: rgba(0, 221,216, 1);
+    background-color: #4079BC;
     -webkit-transition: all .5s ease-in;
     -moz-transition: all .5s ease-in;
     transition: all .5s ease-in;
@@ -361,14 +241,156 @@ nav.custom-light li a:hover, nav.custom-light li a:focus{
     background-color: rgba(255,255,255,.4);
     height:100%;
     margin:0;
+    }
+/*Intro Section Home Page*/
+#hero{
+
+    z-index: -999;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/water.jpg) no-repeat scroll;;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: table;
+
 }
+
+#hero h1 {
+    color: #ff4d79;
+  
+/*    color: #FFFFFF;  
+*/    text-align: center;
+    font-size: 70px;
+    font-family: Raleway ,sans-serif;
+    font-weight: 600;
+    padding: 0 ;
+    margin-bottom: -10px;
+    letter-spacing: 0px;
+
+}
+
+#hero h2{
+    padding: 0px;
+    margin: 0px;
+    color: #FFFFFF;  
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: Raleway,sans-serif;
+
+}
+
+#hero a:link, a:visited{
+    color:rgba(255,255,255,.72);;
+}
+
+#hero a:hover{
+    color:rgba(255,255,255,1);
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 100%;
+}
+
+/* Blinking Cursor
+   http://codepen.io/ArtemGordinsky/pen/GnLBq
+*/
+.blinking-cursor {
+    font-weight: 600;
+    font-size: 70px;
+    color: #FFFFFF;
+    padding: 0 ;
+    margin-bottom: -10px;
+    letter-spacing: 0px;
+
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFFFFF;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFFFFF;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFFFFF;
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFFFFF;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFFFFF;
+  }
+}
+
+/* The Site */
+#theSite{
+    background-color: #FFFFFF;
+}
+
+/* Get Started */
+#getStarted{
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+/* About Me */
+
+#subAboutMe{
+    background-color: #EEEEEE;
+    width: 100  %;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px 0px 30px 0px;
+    padding: 20px;
+}
+
+
 /* =============================
 ==============FORMS=============
 ============================= */
 
 
 /*Contact Form*/
-.contactForm {
+/*.contactForm {
     margin-left:auto;
     margin-right:auto;
     background: #EEEEEE;
@@ -402,10 +424,10 @@ nav.custom-light li a:hover, nav.custom-light li a:focus{
 #results{
     text-align: center;
 }
-
+*/
 
 /*Add DataForm*/
-.addData {
+/*.addData {
     margin-left:auto;
     margin-right:auto;
     color: #777777;
@@ -440,9 +462,9 @@ nav.custom-light li a:hover, nav.custom-light li a:focus{
 #dataResults{
     text-align: center;
 }
-
+*/
 /*Update Users DataForm*/
-
+/*
 #updateUserButton{
     text-align: center;
 }
@@ -450,5 +472,5 @@ nav.custom-light li a:hover, nav.custom-light li a:focus{
 #cellresults{
     text-align: center;
 }
-
+*/
 
