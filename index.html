@@ -52,10 +52,10 @@
     <script>
     $(window).scroll(function() {
         if ($(".navbar").offset().top > 20) {
-            $(".custom").addClass("custom-light");
+            $(".custom-transparent").addClass("custom");
             $(this).after('<div id="details">Loading</div>');
         } else {
-            $(".custom").removeClass("custom-light");
+            $(".custom-transparent").removeClass("custom");
         }
     });
     </script>
@@ -69,10 +69,10 @@
 <span class="glyphicon glyphicon-align-justify"></span>
 </button>
 
-<nav class = "custom navbar navbar-collapse collapse navbar-fixed-top" role="navigation" id="top-nav">
+<nav class = "custom-transparent navbar navbar-collapse collapse navbar-fixed-top" role="navigation" id="top-nav">
     <ul class="navbar-nav nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#theSite">Profile</a></li>
+        <li><a href="#profile">Profile</a></li>
         <li><a href="datatracker.php">Resume</a></li>
         <li><a href="#aboutMe">About Me</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -90,21 +90,21 @@
     </div>
 </div>
 <!--The Site-->
-<section id="theSite">
+<section id="profile">
     <div class="content">
-            <h3> Hello </h3>
-            <article>
-                <h4> About the DataTracker</h4>
-                Every month I run into the same problem - I'm almost out of data on my cellphone.  The DataTracker will keep track of how much data I use within the month on my cellphone, and hopefully, preventing me from going over on my data.  It will be able to see how much data I've used so far, how much I have left in the month, along with what applications are using the most data.
-                <h4> What the App Will Do</h4>
-                <ul>
-                    <li> Allow you to input how much data you have used during the day</li>
-                    <li> Allow you to input how much each application will use</li>
-                    <li> Allow you to view how much data you have used and how much you have left</li>
-                    <li> Tell you how to budget your data for the rest of the month</li>
-                </ul>
-            </article>
-    </div>
+        <h3> Hello, World.  I am Audrey.</h3>
+        <div id="subProfile">
+            <img src="images/audrey_face.jpg" alt="Audrey Choi" class="aboutPhoto img-circle">
+            <p>
+                <span class="bold"> Name: </span> Audrey Grace (named after Audrey Hepburn and Grace Kelly) <br />
+                <span class="bold"> Age: </span> 21 years young<br />
+                <span class="bold"> Location: </span> Northern Virginia/Charlottesvile. Virginia<br />
+                <span class="bold"> Position: </span> Student at the Univeristy of Virginia majoring in Computer Science<br />
+                <span class="bold"> Sign: </span> Leo<br />
+                <span class="bold"> Favorite Food: </span> Turon (It's like a Fried Banana Eggroll) or Apple Turnovers<br />
+                <span class="bold"> Random Facts About Me: </span> I've moved 10 times in my life, I have a younger brother, I'm half-Korean, quarter-Chinese, eighth-Fillipino, eighth-Spanish
+            </p>
+        </div>    </div>
 </section>
 
 <section id="getStarted">
@@ -120,18 +120,7 @@
 <section id="aboutMe">
     <div class="content">
         <h3> About Me </h3>
-        <div id="subAboutMe">
-            <img src="images/audrey_face.jpg" alt="Audrey Choi" class="aboutPhoto img-circle">
-            <p>
-                <span class="bold"> Name: </span> Audrey Grace (named after Audrey Hepburn and Grace Kelly) <br />
-                <span class="bold"> Age: </span> 21 years young<br />
-                <span class="bold"> Location: </span> Northern Virginia/Charlottesvile. Virginia<br />
-                <span class="bold"> Position: </span> Student at the Univeristy of Virginia majoring in Computer Science<br />
-                <span class="bold"> Sign: </span> Leo<br />
-                <span class="bold"> Favorite Food: </span> Turon (It's like a Fried Banana Eggroll) or Apple Turnovers<br />
-                <span class="bold"> Random Facts About Me: </span> I've moved 10 times in my life, I have a younger brother, I'm half-Korean, quarter-Chinese, eighth-Fillipino, eighth-Spanish
-            </p>
-        </div>
+
     </div>
 </section>
 
