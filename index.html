@@ -27,7 +27,7 @@
                   url: 'contact.php',
                   data: {name: $( "#name" ).val(), email: $("#email").val(), message: $("#message").val()},
                   success: function(data){
-                      $('#results').html(data);   
+                      $('#results').html(data);
                   }
               });
           });
@@ -86,65 +86,50 @@
     <div class="hero-text">
         <h1> Audrey Grace Choi <span class="blinking-cursor">|</span></h1>
         <h2> Software Consultant</h2>
-        <a href="#theSite"><span class="glyphicon glyphicon-chevron-down"></span></a>
+        <a href="#profile"><span class="glyphicon glyphicon-chevron-down"></span></a>
     </div>
 </div>
 <!--The Site-->
-<section id="profile">
-    <div class="content">
-        <h3> Hello, World.  I am Audrey.</h3>
-        <div id="subProfile">
-            <img src="images/audrey_face.jpg" alt="Audrey Choi" class="aboutPhoto img-circle">
-            <p>
-                <span class="bold"> Name: </span> Audrey Grace (named after Audrey Hepburn and Grace Kelly) <br />
-                <span class="bold"> Age: </span> 21 years young<br />
-                <span class="bold"> Location: </span> Northern Virginia/Charlottesvile. Virginia<br />
-                <span class="bold"> Position: </span> Student at the Univeristy of Virginia majoring in Computer Science<br />
-                <span class="bold"> Sign: </span> Leo<br />
-                <span class="bold"> Favorite Food: </span> Turon (It's like a Fried Banana Eggroll) or Apple Turnovers<br />
-                <span class="bold"> Random Facts About Me: </span> I've moved 10 times in my life, I have a younger brother, I'm half-Korean, quarter-Chinese, eighth-Fillipino, eighth-Spanish
-            </p>
-        </div>    </div>
-</section>
 
-<section id="getStarted">
-    <div class="content-grey content">
-            <h3> Start Tracking Your Data</h3>
-            <span class="glyphicon glyphicon-pencil" ></span>
-            <br />
-            <br />
-            <a href="datatracker.php" class="btn" role="button">Get Started</a>    
-    </div>
-</section>
+      <!-- The Timeline -->
 
-<section id="aboutMe">
-    <div class="content">
-        <h3> About Me </h3>
+      <ul class="timeline">
 
-    </div>
-</section>
+      	<!-- Item 1 -->
+      	<li>
+      		<div class="direction-r">
+      			<div class="flag-wrapper">
+      				<span class="flag">Freelancer</span>
+      				<span class="time-wrapper"><span class="time">2013 - present</span></span>
+      			</div>
+      			<div class="desc">My current employment. Way better than the position before!</div>
+      		</div>
+      	</li>
 
-<section id="contact">
-    <div class="content-grey content">
-            <h3> Contact Me </h3>
-        <div class="contactForm">
-            <label for="name">Name</label>
-            <input name ="name" id ="name" type="text" class="form-control" required/>
-            <br />
-            <label for="email">Email</label>
-            <input name="email" id="email" type="text" class="form-control" required/>
-            <br />
-            <label for="message">Message</label>
-            <textarea name="message" id="message" class="form-control" required> </textarea>
-            <br />
-            <div id = "contactButton">
-            <button type="button" class="btn" id="send">Send</button>
-            </div>
-            <div id="results"></div>
+      	<!-- Item 2 -->
+      	<li>
+      		<div class="direction-l">
+      			<div class="flag-wrapper">
+      				<span class="flag">Apple Inc.</span>
+      				<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+      			</div>
+      			<div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+      		</div>
+      	</li>
 
-        </div>
-    </div>
-</section>
+      	<!-- Item 3 -->
+      	<li>
+      		<div class="direction-r">
+      			<div class="flag-wrapper">
+      				<span class="flag">Harvard University</span>
+      				<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+      			</div>
+      			<div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+      		</div>
+      	</li>
+
+      </ul>
+
 
 
 </body>
