@@ -2,134 +2,148 @@
 
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Audrey Grace Choi</title>
+  <title>Audrey Grace Choi</title>
 
-    <!-- Referenced Sheets -->
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:600,400">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <!-- Referenced Sheets -->
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:600,400">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 
-    <!-- Scripts -->
+  <!-- Scripts -->
 
-    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 
-    <script>
-        $(document).ready(function() {
-          $("#send").click(function() {
-              $.ajax({
-                  url: 'contact.php',
-                  data: {name: $( "#name" ).val(), email: $("#email").val(), message: $("#message").val()},
-                  success: function(data){
-                      $('#results').html(data);
-                  }
-              });
-          });
-      });
-    </script>
-
-    <script>
-    $(document).ready(function () {
-    $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault();
-        var target = this.hash,
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            });
-        });
-
-    });
-    </script>
-    <script>
-    $(window).scroll(function() {
-        if ($(".navbar").offset().top > 20) {
-            $(".custom-transparent").addClass("custom");
-            $(this).after('<div id="details">Loading</div>');
-        } else {
-            $(".custom-transparent").removeClass("custom");
+  <script>
+  $(document).ready(function() {
+    $("#send").click(function() {
+      $.ajax({
+        url: 'contact.php',
+        data: {name: $( "#name" ).val(), email: $("#email").val(), message: $("#message").val()},
+        success: function(data){
+          $('#results').html(data);
         }
+      });
     });
-    </script>
+  });
+  </script>
+
+  <script>
+  $(document).ready(function () {
+    $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+      var target = this.hash,
+      $target = $(target);
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 500, 'swing', function () {
+        window.location.hash = target;
+      });
+    });
+
+  });
+  </script>
+  <script>
+  $(window).scroll(function() {
+    if ($(".navbar").offset().top > 20) {
+      $(".custom-transparent").addClass("custom");
+      $(this).after('<div id="details">Loading</div>');
+    } else {
+      $(".custom-transparent").removeClass("custom");
+    }
+  });
+  </script>
 
 </head>
 <body>
-<header>
+  <header>
 
-<div class="container">
-<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-<span class="glyphicon glyphicon-align-justify"></span>
-</button>
+    <div class="container">
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="glyphicon glyphicon-align-justify"></span>
+      </button>
 
-<nav class = "custom-transparent navbar navbar-collapse collapse navbar-fixed-top" role="navigation" id="top-nav">
-    <ul class="navbar-nav nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="datatracker.php">Resume</a></li>
-        <li><a href="#aboutMe">About Me</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-</div>
-
-</header>
-
-<div id = "hero">
-    <div class="hero-text">
-        <h1> Audrey Grace Choi <span class="blinking-cursor">|</span></h1>
-        <h2> Software Consultant</h2>
-        <a href="#profile"><span class="glyphicon glyphicon-chevron-down"></span></a>
+      <nav class = "custom-transparent navbar navbar-collapse collapse navbar-fixed-top" role="navigation" id="top-nav">
+        <ul class="navbar-nav nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="datatracker.php">Resume</a></li>
+          <li><a href="#aboutMe">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+
+  </header>
+
+  <div id = "hero">
+    <div class="hero-text">
+      <h1> Audrey Grace Choi <span class="blinking-cursor">|</span></h1>
+      <h2> Software Consultant</h2>
+      <a href="#intro"><span class="glyphicon glyphicon-chevron-down"></span></a>
+    </div>
+  </div>
+  <!--The Site-->
+    <!-- Intro/Hello World-->\
+
+    <section id="intro">
+      <div class="content">
+        <h3> Hello, World!</h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin nisi a pulvinar fringilla. Donec imperdiet venenatis risus, at commodo elit finibus et. Nullam gravida finibus ipsum ac imperdiet. Sed tempus, justo sed blandit euismod, elit erat auctor libero, sed ullamcorper lectus nisl nec nisl. Mauris nisl lorem, eleifend vel quam sit amet, porta mattis nisi. Donec nibh leo, congue vel pulvinar vel, finibus nec quam. Quisque in risus pretium metus laoreet lobortis. Curabitur lobortis turpis quis sapien viverra blandit in non metus. Vivamus eu dui a nisl ultricies ornare. Quisque a justo scelerisque, congue lorem sed, semper nisi. Pellentesque vitae eleifend neque, viverra feugiat tortor. Sed id nulla vel nisl bibendum ultricies porta porttitor metus.
+        </p>
+      </div>
+    </section>
+
+
+<section id="history">
+  <div class="content">
+    <h3> Where I've Been</h3>
+  <!-- The Timeline -->
+
+  <ul class="timeline">
+
+    <!-- Item 1 -->
+    <li>
+      <div class="direction-r">
+        <div class="flag-wrapper">
+          <span class="flag">Red Hat</span>
+          <span class="time-wrapper"><span class="time">2015 - present</span></span>
+        </div>
+        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+      </div>
+    </li>
+
+    <!-- Item 2 -->
+    <li>
+      <div class="direction-l">
+        <div class="flag-wrapper">
+          <span class="flag">Genworth Financial</span>
+          <span class="time-wrapper"><span class="time">2014</span></span>
+        </div>
+        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+      </div>
+    </li>
+
+    <!-- Item 3 -->
+    <li>
+      <div class="direction-r">
+        <div class="flag-wrapper">
+          <span class="flag">University of Virginia</span>
+          <span class="time-wrapper"><span class="time">2011 - 2015</span></span>
+        </div>
+        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+      </div>
+    </li>
+
+  </ul>
 </div>
-<!--The Site-->
-
-      <!-- The Timeline -->
-
-      <ul class="timeline">
-
-      	<!-- Item 1 -->
-      	<li>
-      		<div class="direction-r">
-      			<div class="flag-wrapper">
-      				<span class="flag">Freelancer</span>
-      				<span class="time-wrapper"><span class="time">2013 - present</span></span>
-      			</div>
-      			<div class="desc">My current employment. Way better than the position before!</div>
-      		</div>
-      	</li>
-
-      	<!-- Item 2 -->
-      	<li>
-      		<div class="direction-l">
-      			<div class="flag-wrapper">
-      				<span class="flag">Apple Inc.</span>
-      				<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
-      			</div>
-      			<div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
-      		</div>
-      	</li>
-
-      	<!-- Item 3 -->
-      	<li>
-      		<div class="direction-r">
-      			<div class="flag-wrapper">
-      				<span class="flag">Harvard University</span>
-      				<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
-      			</div>
-      			<div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
-      		</div>
-      	</li>
-
-      </ul>
-
+</section>
 
 
 </body>
