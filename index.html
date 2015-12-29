@@ -19,46 +19,7 @@
   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-
-  <script>
-  $(document).ready(function() {
-    $("#send").click(function() {
-      $.ajax({
-        url: 'contact.php',
-        data: {name: $( "#name" ).val(), email: $("#email").val(), message: $("#message").val()},
-        success: function(data){
-          $('#results').html(data);
-        }
-      });
-    });
-  });
-  </script>
-
-  <script>
-  $(document).ready(function () {
-    $('a[href^="#"]').on('click',function (e) {
-      e.preventDefault();
-      var target = this.hash,
-      $target = $(target);
-      $('html, body').stop().animate({
-        'scrollTop': $target.offset().top
-      }, 500, 'swing', function () {
-        window.location.hash = target;
-      });
-    });
-
-  });
-  </script>
-  <script>
-  $(window).scroll(function() {
-    if ($(".navbar").offset().top > 20) {
-      $(".custom-transparent").addClass("custom");
-      $(this).after('<div id="details">Loading</div>');
-    } else {
-      $(".custom-transparent").removeClass("custom");
-    }
-  });
-  </script>
+  <script src="js/index.js"></script>
 
 </head>
 <body>
@@ -166,6 +127,70 @@
         </li>
 
       </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="content">
+      <h3> Skills</h3>
+      <div class="skillsContainer">
+        <div class="skillBar">
+          <h4>Java</h4>
+          <div class="skillBarContainer">
+            <div class="skillBarValue value-90"></div>
+          </div>
+        </div>
+
+        <div class="skillBar">
+          <h4>Python</h4>
+          <div class="skillBarContainer">
+            <div class="skillBarValue value-80"></div>
+          </div>
+        </div>
+
+        <div class="skillBar">
+          <h4>C++</h4>
+          <div class="skillBarContainer">
+            <div class="skillBarValue value-60"></div>
+          </div>
+        </div>
+
+        <div class="skillBar">
+          <h4>SQL</h4>
+          <div class="skillBarContainer">
+            <div class="skillBarValue value-90"></div>
+          </div>
+        </div>
+
+        <div class="skillBar">
+          <h4>HTML</h4>
+          <div class="skillBarContainer">
+            <div class="skillBarValue value-70"></div>
+          </div>
+        </div>
+
+        <div class="skillBar">
+          <h4>CSS</h4>
+          <div class="skillBarContainer">
+            <div class="skillBarValue value-50"></div>
+          </div>
+        </div>
+
+        <div class="skillBar">
+          <h4>Docker</h4>
+          <div class="skillBarContainer">
+            <div class="skillBarValue value-70"></div>
+          </div>
+        </div>
+
+        <div class="skillBar">
+          <h4>Amazon Web Services</h4>
+          <div class="skillBarContainer">
+            <div class="skillBarValue value-80"></div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
