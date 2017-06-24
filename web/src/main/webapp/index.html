@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hello, World</title>
+
+  <!-- Referenced Sheets -->
+  <link rel="stylesheet" href="www/components/stylesheets/main.css">
+  <link href="bower_components/patternfly/dist/css/patternfly.min.css" rel="stylesheet" media="screen, print">
+  <link href="bower_components/patternfly/dist/css/patternfly-additions.min.css" rel="stylesheet" media="screen, print">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:600,400">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Scripts -->
+
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="www/components/scripts/index.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/patternfly/dist/js/patternfly.min.js"></script>
+
+</head>
+<body ng-app="pmod">
+  <header>
+
+    <div class="container">
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="glyphicon glyphicon-align-justify"></span>
+      </button>
+
+      <nav class = "custom-transparent navbar navbar-collapse collapse navbar-fixed-top" role="navigation" id="top-nav">
+        <ul class="navbar-nav nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <div id = "hero">
+    <div class="hero-text">
+      <h1> Audrey Grace Choi <span class="blinking-cursor">|</span></h1>
+      <h2> Software Consultant</h2>
+      <a href="#intro"><span class="glyphicon glyphicon-chevron-down"></span></a>
+    </div>
+  </div>
+  <!--The Site-->
+  <!-- Intro/Hello World-->
+  <section id="intro">
+    <div class="content">
+      <h3> Hello, World!</h3>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin nisi a pulvinar fringilla. Donec imperdiet venenatis risus, at commodo elit finibus et. Nullam gravida finibus ipsum ac imperdiet. Sed tempus, justo sed blandit euismod, elit erat auctor libero, sed ullamcorper lectus nisl nec nisl. Mauris nisl lorem, eleifend vel quam sit amet, porta mattis nisi. Donec nibh leo, congue vel pulvinar vel, finibus nec quam. Quisque in risus pretium metus laoreet lobortis. Curabitur lobortis turpis quis sapien viverra blandit in non metus. Vivamus eu dui a nisl ultricies ornare. Quisque a justo scelerisque, congue lorem sed, semper nisi. Pellentesque vitae eleifend neque, viverra feugiat tortor. Sed id nulla vel nisl bibendum ultricies porta porttitor metus.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="history">
+    <div class="content">
+      <h3> Where I've Been</h3>
+      <!-- The Timeline -->
+
+      <ul class="timeline">
+
+        <!--  Red Hat-->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Red Hat</span>
+              <span class="time-wrapper"><span class="time">2015 - present</span></span>
+            </div>
+            <div class="desc">
+              <div class="sub">
+                Consultant <br />
+                New York, NY <br />
+              </div>
+              Analyzed customer needs and built technology solutions using Red Hat Products <br />
+              Architected a business solution utilizing Red Hat BPM for a public sector client that will be presented
+              at an industry conference <br />
+              Migrated a client’s code base to Red Hat BRMS 6 and Java 8 <br />
+              Implemented an ETL application used to migrate healthcare customer records due to a company
+              acquisition <br />
+              Developed, implemented, and managed an internal team building events program, which has grown to encompass 15 offices throughout North America with 500% growth in attendance in one year
+
+            </div>
+          </div>
+        </li>
+
+        <!-- Genworth -->
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">Genworth Financial</span>
+              <span class="time-wrapper"><span class="time">2014</span></span>
+            </div>
+            <div class="desc">
+              <div class="sub">
+                IT Intern - Process Automation<br />
+                Richmond, VA <br />
+              </div>
+              Earned Applause Award - A spot award program for immediate and timely recognition of a job well done <br />
+              Partnered with Senior Leadership team on new risk strategy plan and design <br />
+              Created business solution to automate two major profitability reports with an extreme amount of big data  <br />
+              Reduced a 4 hour reporting process to 2 minutes  <br />
+              Developed the first Oracle APEX application put into production  <br />
+            </div>
+          </div>
+        </li>
+
+        <!-- UVA -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">University of Virginia</span>
+              <span class="time-wrapper"><span class="time">2011 - 2015</span></span>
+            </div>
+            <div class="desc">
+              <div class="sub">
+                B.S. Computer Science
+              </div>
+              Head Co-Chair of Engineering Guide Service <br />
+              Co-Chair of Online Auction Committee (2014), Co-Chair of Fundraising Committee (2013) for Sigma Kapp Violet Gala <br />
+              Involved in Engineering Student Council, Sigma Kappa Sorority, Sigma Alpha Lambda Honor Fraternity, Habitat for Humanity
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="content">
+      <h3> Skills</h3>
+      <div class="skillsContainer container-fluid">
+        <div class="row">
+
+          <div class="skillBar col-md-3">
+            <h4>Java</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-90"></div>
+            </div>
+          </div>
+
+          <div class="skillBar col-md-3">
+            <h4>Python</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-80"></div>
+            </div>
+          </div>
+
+          <div class="skillBar col-md-3">
+            <h4>C++</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-60"></div>
+            </div>
+          </div>
+
+          <div class="skillBar col-md-3">
+            <h4>C++</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-60"></div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="row">
+
+          <div class="skillBar col-md-3">
+            <h4>HTML</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-70"></div>
+            </div>
+          </div>
+
+          <div class="skillBar col-md-3">
+            <h4>CSS</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-50"></div>
+            </div>
+          </div>
+
+          <div class="skillBar col-md-3">
+            <h4>Docker</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-70"></div>
+            </div>
+          </div>
+
+          <div class="skillBar col-md-3">
+            <h4>Docker</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-70"></div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="row">
+
+          <div class="skillBar col-md-3">
+            <h4>HTML</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-70"></div>
+            </div>
+          </div>
+
+          <div class="skillBar col-md-3">
+            <h4>CSS</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-50"></div>
+            </div>
+          </div>
+
+          <div class="skillBar col-md-3">
+            <h4>Docker</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-70"></div>
+            </div>
+
+
+            <div class="skillBar col-md-3">
+              <h4>Docker</h4>
+              <div class="skillBarContainer">
+                <div class="skillBarValue value-70"></div>
+              </div>
+            </div>
+
+
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>

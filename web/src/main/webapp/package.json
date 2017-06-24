@@ -1,0 +1,26 @@
+{
+  "name": "pmod",
+  "version": "1.0.0",
+  "description": "internal redhat pmo dashboard",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
+    "express": "^4.14.0",
+    "http-server": "^0.9.0",
+    "karma": "^1.3.0",
+    "method-override": "^2.3.6",
+    "morgan": "^1.7.0",
+    "protractor": "^4.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.consulting.redhat.com/pmo-dashboard/pmod"
+  },
+  "author": "pmo-dashboard",
+  "license": "ISC"
+}
