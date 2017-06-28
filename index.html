@@ -23,216 +23,217 @@
 
 </head>
 <body ng-app="pmod">
-<header>
+  <header>
 
-  <div class="container">
-    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="glyphicon glyphicon-align-justify"></span>
-    </button>
+    <div class="container">
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="glyphicon glyphicon-align-justify"></span>
+      </button>
 
-    <nav class = "custom-transparent navbar navbar-collapse collapse navbar-fixed-top" role="navigation" id="top-nav">
-      <ul class="navbar-nav nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#history">History</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <nav class = "custom-transparent navbar navbar-collapse collapse navbar-fixed-top" role="navigation" id="top-nav">
+        <ul class="navbar-nav nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <div id = "hero">
+    <div class="hero-text">
+      <h1> Audrey Grace Choi <span class="blinking-cursor">|</span></h1>
+      <h2> Software Engineer</h2>
+      <a href="#about"><span class="glyphicon glyphicon-chevron-down"></span></a>
+    </div>
+  </div>
+  <!--The Site-->
+  <!-- Intro/Hello World-->
+  <section id="about">
+    <div class="content">
+      <h3> Hello, World!</h3>
+      <p>
+        I'm Audrey, a software engineer out of New York City.  I'm currently working as a middleware consultant for
+        Red Hat developing software using Red Hat products.  I enjoy photography, developing things, traveling, and reading.
+      </p>
+      <h4>Currently, I am...</h4>
+      <p>
+        <b>Reading:</b> <i>The Drunkard's Walk: How Randomness Rules Our Lives</i> by Leonard Mlodinow
+        <br />
+        <b>Binge Watching:</b> Friends
+      </p>
+    </div>
+  </section>
+
+
+  <section id="history">
+    <div class="content">
+      <h3> Where I've Been</h3>
+      <!-- The Timeline -->
+
+      <ul class="timeline">
+
+        <!--  Red Hat-->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Red Hat</span>
+              <span class="time-wrapper"><span class="time">2015 - present</span></span>
+            </div>
+            <div class="desc">
+              <div class="sub">
+                Consultant <br />
+                New York, NY <br />
+              </div>
+              Analyzed customer needs and built technology solutions using Red Hat Products <br />
+              Architected a business solution utilizing Red Hat BPM for a public sector client that will be presented
+              at an industry conference <br />
+              Migrated a client’s code base to Red Hat BRMS 6 and Java 8 <br />
+              Implemented an ETL application used to migrate healthcare customer records due to a company
+              acquisition <br />
+              Developed, implemented, and managed an internal team building events program, which has grown to encompass 15 offices throughout North America with 500% growth in attendance in one year
+
+            </div>
+          </div>
+        </li>
+
+        <!-- Genworth -->
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">Genworth Financial</span>
+              <span class="time-wrapper"><span class="time">2014</span></span>
+            </div>
+            <div class="desc">
+              <div class="sub">
+                IT Intern - Process Automation<br />
+                Richmond, VA <br />
+              </div>
+              Earned Applause Award - A spot award program for immediate and timely recognition of a job well done <br />
+              Partnered with Senior Leadership team on new risk strategy plan and design <br />
+              Created business solution to automate two major profitability reports with an extreme amount of big data  <br />
+              Reduced a 4 hour reporting process to 2 minutes  <br />
+              Developed the first Oracle APEX application put into production  <br />
+            </div>
+          </div>
+        </li>
+
+        <!-- UVA -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">University of Virginia</span>
+              <span class="time-wrapper"><span class="time">2011 - 2015</span></span>
+            </div>
+            <div class="desc">
+              <div class="sub">
+                B.S. Computer Science
+              </div>
+              Head Co-Chair of Engineering Guide Service <br />
+              Co-Chair of Online Auction Committee (2014), Co-Chair of Fundraising Committee (2013) for Sigma Kapp Violet Gala <br />
+              Involved in Engineering Student Council, Sigma Kappa Sorority, Sigma Alpha Lambda Honor Fraternity, Habitat for Humanity
+            </div>
+          </div>
+        </li>
+
       </ul>
-    </nav>
-  </div>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="content">
+      <h3> Skills</h3>
+      <div class="skillsContainer container-fluid">
+        <div class="row">
 
-</header>
-
-<div id = "hero">
-  <div class="hero-text">
-    <h1> Audrey Grace Choi <span class="blinking-cursor">|</span></h1>
-    <h2> Software Engineer</h2>
-    <a href="#about"><span class="glyphicon glyphicon-chevron-down"></span></a>
-  </div>
-</div>
-<!--The Site-->
-<!-- Intro/Hello World-->
-<section id="about">
-  <div class="content">
-    <h3> Hello, World!</h3>
-    <p>
-      I'm Audrey, a software engineer out of New York City.  I'm currently working as a middleware consultant for
-      Red Hat developing software using Red Hat products.  I enjoy photography, developing things, traveling, and reading.
-    </p>
-    <h4>Currently, I am...</h4>
-    <p>
-      <b>Reading:</b> <i>The Drunkard's Walk: How Randomness Rules Our Lives</i> by Leonard Mlodinow
-      <br />
-      <b>Binge Watching:</b> Friends
-    </p>
-  </div>
-</section>
-
-
-<section id="history">
-  <div class="content">
-    <h3> Where I've Been</h3>
-    <!-- The Timeline -->
-
-    <ul class="timeline">
-
-      <!--  Red Hat-->
-      <li>
-        <div class="direction-r">
-          <div class="flag-wrapper">
-            <span class="flag">Red Hat</span>
-            <span class="time-wrapper"><span class="time">2015 - present</span></span>
-          </div>
-          <div class="desc">
-            <div class="sub">
-              Consultant <br />
-              New York, NY <br />
+          <div class="skillBar col-md-3">
+            <h4>Java</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-90"></div>
             </div>
-            Analyzed customer needs and built technology solutions using Red Hat Products <br />
-            Architected a business solution utilizing Red Hat BPM for a public sector client that will be presented
-            at an industry conference <br />
-            Migrated a client’s code base to Red Hat BRMS 6 and Java 8 <br />
-            Implemented an ETL application used to migrate healthcare customer records due to a company
-            acquisition <br />
-            Developed, implemented, and managed an internal team building events program, which has grown to encompass 15 offices throughout North America with 500% growth in attendance in one year
-
           </div>
-        </div>
-      </li>
 
-      <!-- Genworth -->
-      <li>
-        <div class="direction-l">
-          <div class="flag-wrapper">
-            <span class="flag">Genworth Financial</span>
-            <span class="time-wrapper"><span class="time">2014</span></span>
-          </div>
-          <div class="desc">
-            <div class="sub">
-              IT Intern - Process Automation<br />
-              Richmond, VA <br />
+          <div class="skillBar col-md-3">
+            <h4>Python</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-80"></div>
             </div>
-            Earned Applause Award - A spot award program for immediate and timely recognition of a job well done <br />
-            Partnered with Senior Leadership team on new risk strategy plan and design <br />
-            Created business solution to automate two major profitability reports with an extreme amount of big data  <br />
-            Reduced a 4 hour reporting process to 2 minutes  <br />
-            Developed the first Oracle APEX application put into production  <br />
           </div>
-        </div>
-      </li>
 
-      <!-- UVA -->
-      <li>
-        <div class="direction-r">
-          <div class="flag-wrapper">
-            <span class="flag">University of Virginia</span>
-            <span class="time-wrapper"><span class="time">2011 - 2015</span></span>
-          </div>
-          <div class="desc">
-            <div class="sub">
-              B.S. Computer Science
+          <div class="skillBar col-md-3">
+            <h4>C++</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-80"></div>
             </div>
-            Head Co-Chair of Engineering Guide Service <br />
-            Co-Chair of Online Auction Committee (2014), Co-Chair of Fundraising Committee (2013) for Sigma Kapp Violet Gala <br />
-            Involved in Engineering Student Council, Sigma Kappa Sorority, Sigma Alpha Lambda Honor Fraternity, Habitat for Humanity
           </div>
-        </div>
-      </li>
 
-    </ul>
-  </div>
-</section>
-<section id="skills">
-  <div class="content">
-    <h3> Skills</h3>
-    <div class="skillsContainer container-fluid">
-      <div class="row">
-
-        <div class="skillBar col-md-3">
-          <h4>Java</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-90"></div>
+          <div class="skillBar col-md-3">
+            <h4>HTML</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-70"></div>
+            </div>
           </div>
+
+
         </div>
 
-        <div class="skillBar col-md-3">
-          <h4>Python</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-80"></div>
+        <div class="row">
+
+          <div class="skillBar col-md-3">
+            <h4>CSS</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-70"></div>
+            </div>
           </div>
+
+          <div class="skillBar col-md-3">
+            <h4>JavaScript</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-30"></div>
+            </div>
+          </div>
+
+          <div class="skillBar col-md-3">
+            <h4>Scala</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-30"></div>
+            </div>
+          </div>
+
+          <div class="skillBar col-md-3">
+            <h4>MySql</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-90"></div>
+            </div>
+          </div>
+
+
         </div>
 
-        <div class="skillBar col-md-3">
-          <h4>C++</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-80"></div>
+        <div class="row">
+
+          <div class="skillBar col-md-3">
+            <h4>Oracle SQL</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-90"></div>
+            </div>
           </div>
-        </div>
 
-        <div class="skillBar col-md-3">
-          <h4>HTML</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-70"></div>
+          <div class="skillBar col-md-3">
+            <h4>Linux</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-80"></div>
+            </div>
           </div>
-        </div>
 
-
-      </div>
-
-      <div class="row">
-
-        <div class="skillBar col-md-3">
-          <h4>CSS</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-70"></div>
-          </div>
-        </div>
-
-        <div class="skillBar col-md-3">
-          <h4>JavaScript</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-30"></div>
-          </div>
-        </div>
-
-        <div class="skillBar col-md-3">
-          <h4>Scala</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-30"></div>
-          </div>
-        </div>
-
-        <div class="skillBar col-md-3">
-          <h4>MySql</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-90"></div>
-          </div>
-        </div>
-
-
-      </div>
-
-      <div class="row">
-
-        <div class="skillBar col-md-3">
-          <h4>Oracle SQL</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-90"></div>
-          </div>
-        </div>
-
-        <div class="skillBar col-md-3">
-          <h4>Linux</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-80"></div>
-          </div>
-        </div>
-
-        <div class="skillBar col-md-3">
-          <h4>AWS</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-80"></div>
+          <div class="skillBar col-md-3">
+            <h4>AWS</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-80"></div>
+            </div>
           </div>
 
 
@@ -243,28 +244,28 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row">
+        <div class="row">
 
-        <div class="skillBar col-md-3">
-          <h4>Drools</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-90"></div>
+          <div class="skillBar col-md-3">
+            <h4>Drools</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-90"></div>
+            </div>
           </div>
-        </div>
 
-        <div class="skillBar col-md-3">
-          <h4>BPMS</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-90"></div>
+          <div class="skillBar col-md-3">
+            <h4>BPMS</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-90"></div>
+            </div>
           </div>
-        </div>
 
-        <div class="skillBar col-md-3">
-          <h4>Git</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-90"></div>
+          <div class="skillBar col-md-3">
+            <h4>Git</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-90"></div>
+            </div>
           </div>
 
 
@@ -275,28 +276,28 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row">
+        <div class="row">
 
-        <div class="skillBar col-md-3">
-          <h4>Spring</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-70"></div>
+          <div class="skillBar col-md-3">
+            <h4>Spring</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-70"></div>
+            </div>
           </div>
-        </div>
 
-        <div class="skillBar col-md-3">
-          <h4>Hibernate</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-70"></div>
+          <div class="skillBar col-md-3">
+            <h4>Hibernate</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-70"></div>
+            </div>
           </div>
-        </div>
 
-        <div class="skillBar col-md-3">
-          <h4>Fabric</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-40"></div>
+          <div class="skillBar col-md-3">
+            <h4>Fabric</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-40"></div>
+            </div>
           </div>
 
 
@@ -307,38 +308,37 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row">
+        <div class="row">
 
-        <div class="skillBar col-md-3">
-          <h4>jQuery</h4>
-          <div class="skillBarContainer">
-            <div class="skillBarValue value-30"></div>
+          <div class="skillBar col-md-3">
+            <h4>jQuery</h4>
+            <div class="skillBarContainer">
+              <div class="skillBarValue value-30"></div>
+            </div>
           </div>
         </div>
+
+
       </div>
-
-
     </div>
-  </div>
-</section>
-<section id="projects">
-  <div class="content">
-    <h3> Projects</h3>
-    <p>
-      You can check out my projects at my <a href ="http://www.github.com/audreygchoi">git repo</a>!
-    </p>
-  </div>
-</section>
-<section id="contact">
-  <div class="content">
-    <h3>Contact Me</h3>
-    <p>
-      You can contact me at Audrey.Grace.Choi@gmail.com</a>!
-    </p>
-  </div>
-</section>
+  </section>
+  <section id="projects">
+    <div class="content">
+      <h3> Projects</h3>
+      <p>
+        You can check out my projects at my <a href ="http://www.github.com/audreygchoi">git repo</a>!
+      </p>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="content">
+      <h3>Contact Me</h3>
+      <p>
+        You can contact me at Audrey.Grace.Choi@gmail.com</a>!
+      </p>
+    </div>
+  </section>
 
 </body>
 </html>
