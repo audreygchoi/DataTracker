@@ -64,10 +64,13 @@ img.aboutPhoto{
 
 p {
   padding: 0px;
+
 }
 
-.bold{
+b, strong{
   font-weight: bold;
+  color: #324177;
+  font-family: Raleway ,sans-serif;
 }
 
 /* =============================
@@ -81,7 +84,9 @@ p {
   padding: 0;
   color: #555555;
   font-family: Raleway ,sans-serif;
-  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  text-align: center;
 }
 
 .content h3 {
@@ -91,9 +96,20 @@ p {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 0;
+  padding: 30px 0px;
   color: #ff4d79;
 }
+.content h4 {
+  text-align: center;
+  font-size: 16px;
+  font-family: Raleway ,sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 0px;
+  color: #324177;
+}
+
 
 .content-grey{
   background-color: #FFFFFF;
@@ -277,7 +293,7 @@ nav.custom-transparent a {
 }
 
 #hero h2{
-  padding: 0px;
+  padding: 0px 0px 40px 0px;
   margin: 0px;
   color: #324177;
   text-align: center;

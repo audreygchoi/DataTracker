@@ -3,6 +3,8 @@ JQuery Scripts
 ************* */
 
 // When you click the link it will go to the place in the page smoothly
+
+var navHeight = $("")
 $(document).ready(function () {
   $('a[href^="#"]').on('click',function (e) {
     e.preventDefault();
