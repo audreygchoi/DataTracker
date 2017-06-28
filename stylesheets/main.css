@@ -398,6 +398,7 @@ http://codepen.io/ArtemGordinsky/pen/GnLBq
   margin-top: 20px;
   padding: 1em 0;
   list-style-type: none;
+  text-align: justify;
 }
 
 .timeline:before {
