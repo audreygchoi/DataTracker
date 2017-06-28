@@ -272,7 +272,7 @@ nav.custom-transparent a {
   min-width: 1024px;
   width: 100%;
   height: 100%;
-  background: url(../images/hero.jpg) no-repeat scroll;;
+  background: url(../images/hero.jpg) #84807f no-repeat scroll;;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
