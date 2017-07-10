@@ -113,7 +113,9 @@ b, strong {
 
 
 .content-grey {
-  background-color: #E4E4E4;
+  background-color: #555555;
+  padding: 50px;
+  padding-bottom: 70px;
 }
 
 .content a:link, a:visited, a:active {
@@ -135,17 +137,13 @@ b, strong {
 }
 
 .contact a:link, .contact a:visited, .contact a:active {
-   color: #555555;
+   color: #FFFFFF;
    text-decoration: none;
 }
 
 .contact a:hover, a:focus {
    color: #ff4d79;
    text-decoration: none;
-}
-
-.contact {
-   margin-bottom: 30%;
 }
 
 .content-med{
@@ -248,7 +246,7 @@ nav.custom a {
   text-decoration: none;
   text-transform: uppercase;
   display:inline-block;
-  color:#FFFFFF;
+  color: #FFFFFF;
 
 }
 
