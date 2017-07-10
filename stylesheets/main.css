@@ -147,7 +147,7 @@ b, strong {
 }
 
 .contact li{
-  padding-right:5px;
+  padding-right: 15px;
   float: left;
 }
 .contact a:link, .contact a:visited, .contact a:active {
