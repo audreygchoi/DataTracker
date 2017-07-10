@@ -118,7 +118,7 @@ b, strong {
   padding-bottom: 70px;
 }
 
-.content a:link, a:visited, a:active {
+.content a:link, .content a:visited, .conent a:active {
   color: #4079BC;
   text-decoration: none;
 }
@@ -132,10 +132,24 @@ b, strong {
   width: 100%;
 }
 
-.contact ul {
-  list-style: none;
+.contact {
+  margin: 25px auto;
+  text-align: center;
 }
 
+.contact ul {
+  list-style: none;
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0px;
+}
+
+.contact li{
+  padding-right:5px;
+  float: left;
+}
 .contact a:link, .contact a:visited, .contact a:active {
    color: #FFFFFF;
    text-decoration: none;
@@ -146,12 +160,19 @@ b, strong {
    text-decoration: none;
 }
 
+.contact p{
+   color: #ffffff;
+}
+
 .content-med{
    width: 660px;
    margin: 0 auto;
 }
 
-
+.contact h4{
+   color: #ffffff;
+   size: 14px;
+}
 
 
 
@@ -218,7 +239,7 @@ nav.custom {
   text-align: center;
   width: 100%;
   margin:0px;
-  background-color: #4079BC;
+  background-color: #555555;
   -webkit-transition: all .5s ease-in;
   -moz-transition: all .5s ease-in;
   transition: all .5s ease-in;
@@ -739,8 +760,8 @@ padding: 0 20px;
   height: 1.66em;
   float: left;
   background: #4079BC;
-  background: rgb(64,121,188);
-  background: rgba(64,121,188,.75);
+/*  background: rgb(64,121,188);
+  background: rgba(64,121,188,.75);*/
 }
 
 /* Allowed values for the css skill bars */
