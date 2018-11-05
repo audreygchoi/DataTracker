@@ -26,16 +26,3 @@ $(window).scroll(function() {
     $(".custom-transparent").removeClass("custom");
   }
 });
-
-//Contact form
-$(document).ready(function() {
-  $("#send").click(function() {
-    $.ajax({
-      url: 'contact.php',
-      data: {name: $( "#name" ).val(), email: $("#email").val(), message: $("#message").val()},
-      success: function(data){
-        $('#results').html(data);
-      }
-    });
-  });
-});
